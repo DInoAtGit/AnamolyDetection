@@ -1,0 +1,25 @@
+---
+title: "Credit Card Transactions - Anamoly / Fraud Detectoin R Notebook"
+output: html_notebook
+---
+
+```{r}
+#Load Packages
+pacman::p_load(tidyverse,lubridate,date,stringi,data.table,dplyr,stringr)
+```
+
+Load Data
+
+```{r}
+cc_data = fread("C:\\Dino_C\\Datasets\\creditcard.csv", sep = ",")
+```
+
+How many attributes
+```{r}
+dim(cc_data)
+```
+How are the variables
+```{r}
+str(head(cc_data,4))
+```
+
